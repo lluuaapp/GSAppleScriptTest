@@ -11,6 +11,10 @@
 		DAC858EF1BCE901E007A87FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC858EE1BCE901E007A87FA /* main.m */; };
 		DAC858F11BCE901E007A87FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC858F01BCE901E007A87FA /* Assets.xcassets */; };
 		DAC858F41BCE901E007A87FA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC858F21BCE901E007A87FA /* MainMenu.xib */; };
+		DAC858FC1BCE90C5007A87FA /* GarageSale.sdef in Resources */ = {isa = PBXBuildFile; fileRef = DAC858FB1BCE90C5007A87FA /* GarageSale.sdef */; settings = {ASSET_TAGS = (); }; };
+		DAC858FF1BCE915A007A87FA /* GSApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC858FE1BCE915A007A87FA /* GSApplication.m */; settings = {ASSET_TAGS = (); }; };
+		DAC859021BCE918B007A87FA /* GSEbayListing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC859011BCE918B007A87FA /* GSEbayListing.m */; settings = {ASSET_TAGS = (); }; };
+		DAC859051BCE920A007A87FA /* GSListing.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC859041BCE920A007A87FA /* GSListing.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,13 @@
 		DAC858F01BCE901E007A87FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAC858F31BCE901E007A87FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DAC858F51BCE901E007A87FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC858FB1BCE90C5007A87FA /* GarageSale.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GarageSale.sdef; sourceTree = "<group>"; };
+		DAC858FD1BCE915A007A87FA /* GSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSApplication.h; sourceTree = "<group>"; };
+		DAC858FE1BCE915A007A87FA /* GSApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSApplication.m; sourceTree = "<group>"; };
+		DAC859001BCE918B007A87FA /* GSEbayListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSEbayListing.h; sourceTree = "<group>"; };
+		DAC859011BCE918B007A87FA /* GSEbayListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSEbayListing.m; sourceTree = "<group>"; };
+		DAC859031BCE920A007A87FA /* GSListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSListing.h; sourceTree = "<group>"; };
+		DAC859041BCE920A007A87FA /* GSListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSListing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +66,12 @@
 			children = (
 				DAC858EA1BCE901E007A87FA /* AppDelegate.h */,
 				DAC858EB1BCE901E007A87FA /* AppDelegate.m */,
+				DAC858FD1BCE915A007A87FA /* GSApplication.h */,
+				DAC858FE1BCE915A007A87FA /* GSApplication.m */,
+				DAC859031BCE920A007A87FA /* GSListing.h */,
+				DAC859041BCE920A007A87FA /* GSListing.m */,
+				DAC859001BCE918B007A87FA /* GSEbayListing.h */,
+				DAC859011BCE918B007A87FA /* GSEbayListing.m */,
 				DAC858F01BCE901E007A87FA /* Assets.xcassets */,
 				DAC858F21BCE901E007A87FA /* MainMenu.xib */,
 				DAC858F51BCE901E007A87FA /* Info.plist */,
@@ -66,6 +83,7 @@
 		DAC858ED1BCE901E007A87FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DAC858FB1BCE90C5007A87FA /* GarageSale.sdef */,
 				DAC858EE1BCE901E007A87FA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -129,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC858F11BCE901E007A87FA /* Assets.xcassets in Resources */,
+				DAC858FC1BCE90C5007A87FA /* GarageSale.sdef in Resources */,
 				DAC858F41BCE901E007A87FA /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,8 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC858FF1BCE915A007A87FA /* GSApplication.m in Sources */,
+				DAC859051BCE920A007A87FA /* GSListing.m in Sources */,
 				DAC858EF1BCE901E007A87FA /* main.m in Sources */,
 				DAC858EC1BCE901E007A87FA /* AppDelegate.m in Sources */,
+				DAC859021BCE918B007A87FA /* GSEbayListing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
