@@ -7,7 +7,23 @@
 //
 
 #import "GSApplication.h"
+#import "AppDelegate.h"
 
 @implementation GSApplication
+
+- (AppDelegate*) appDelegate
+{
+    return (AppDelegate*)[[NSApplication sharedApplication] delegate];
+}
+
+- (NSArray*) ebayListings
+{
+    return [self.appDelegate ebayListings];
+}
+
+- (NSArray*) selectedEbayListings
+{
+    return [self.appDelegate selectedEbayListings];
+}
 
 @end

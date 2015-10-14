@@ -11,5 +11,6 @@
 @interface GSListing : NSObject
 
 @property NSString *uuid;
+@property NSString *title;
 
 @end

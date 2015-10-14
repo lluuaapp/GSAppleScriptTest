@@ -10,6 +10,9 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (readonly) NSArray* ebayListings;
+
+- (NSArray*) selectedEbayListings;
 
 @end
 

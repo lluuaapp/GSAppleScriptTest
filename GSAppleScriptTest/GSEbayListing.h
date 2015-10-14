@@ -10,4 +10,6 @@
 
 @interface GSEbayListing : GSListing
 
+@property NSString *sku;
+
 @end

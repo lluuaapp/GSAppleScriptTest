@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
 
-<dictionary title="GarageSale Terminology">
+<dictionary title="GSAppleScriptTest Terminology">
 
 	<suite name="Standard Suite" code="????" description="Common classes and commands for all applications.">
 
@@ -71,7 +71,7 @@
 <!--            </result>-->
 <!--        </command>-->
 
-		<class name="application" code="capp" description="GarageSale’s top level scripting object.">
+		<class name="application" code="capp" description="GSAppleScriptTest’s top level scripting object.">
 			<cocoa class="GSApplication"/>
 			<property name="name" code="pnam" type="text" access="r" description="The name of the application."/>
 			<property name="frontmost" code="pisf" type="boolean" access="r" description="Is this the active application?">
@@ -253,7 +253,7 @@
 
 	</suite>
 
-	<suite name="GarageSale Suite" code="GArs" description="Classes just for the GarageSale application.">
+	<suite name="GSAppleScriptTest Suite" code="GArs" description="Classes just for the GSAppleScriptTest application.">
         
         <!-- https://developer.apple.com/library/prerelease/mac/documentation/Darwin/Reference/ManPages/man5/sdef.5.html -->
         <!--
@@ -270,7 +270,7 @@
 		</enumeration>
          -->
         
-        <class-extension name="GarageSale application" extends="application" description="Extensions specific to GarageSale">
+        <class-extension name="GSAppleScriptTest application" extends="application" description="Extensions specific to GSAppleScriptTest">
 
             <element type="ebay listing" access="r">
                 <cocoa key="ebayListings"/>
@@ -297,7 +297,7 @@
 
         <!-- ########### GSListing ########### -->
         
-		<class name="listing" code="GSli" description="A GarageSale listing">
+		<class name="listing" code="GSli" description="A GSAppleScriptTest listing">
 			<cocoa class="GSListing"/>
 			<property name="title" code="GSti" type="text" access="rw" description="Its title."/>
             <property name="convert description to HTML" code="GSht" type="boolean" access="rw" description="Whether to convert description to HTML.">
