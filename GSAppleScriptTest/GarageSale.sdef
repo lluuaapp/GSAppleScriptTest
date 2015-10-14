@@ -65,12 +65,6 @@
 			</parameter>
 		</command>
 
-<!--        <command name="selected ebay listings" code="GSsellst" description="Selected listings.">-->
-<!--            <result description="The listings selected in the outline view.">-->
-<!--                <type type="ebay listing" list="yes"/>-->
-<!--            </result>-->
-<!--        </command>-->
-
 		<class name="application" code="capp" description="GSAppleScriptTest’s top level scripting object.">
 			<cocoa class="GSApplication"/>
 			<property name="name" code="pnam" type="text" access="r" description="The name of the application."/>
@@ -78,22 +72,9 @@
 				<cocoa key="isActive"/>
 			</property>
 			<property name="version" code="vers" type="text" access="r" description="The version number of the application."/>
-            <!--
-			<element type="document">
-				<cocoa key="orderedDocuments"/>
-			</element>
-             -->
 			<element type="window" access="r">
 				<cocoa key="orderedWindows"/>
 			</element>
-            <!--
-			<responds-to name="open">
-				<cocoa method="handleOpenScriptCommand:"/>
-			</responds-to>
-			<responds-to name="print">
-				<cocoa method="handlePrintScriptCommand:"/>
-			</responds-to>
-             -->
 			<responds-to name="quit">
 				<cocoa method="handleQuitScriptCommand:"/>
 			</responds-to>
@@ -136,21 +117,9 @@
 				<cocoa key="isZoomed"/>
 			</property>
 
-            <!--
-            <property name="document" code="docu" type="document" access="r" description="The document whose contents are displayed in the window."/>
-            -->
-
 			<responds-to name="close">
 				<cocoa method="handleCloseScriptCommand:"/>
 			</responds-to>
-            <!--
-			<responds-to name="print">
-				<cocoa method="handlePrintScriptCommand:"/>
-			</responds-to>
-			<responds-to name="save">
-				<cocoa method="handleSaveScriptCommand:"/>
-			</responds-to>
-             -->
 		</class>
 
 	</suite>
@@ -253,22 +222,13 @@
 
 	</suite>
 
+
+<!--
+        ------- App Specific code starts here -------
+ -->
+
+
 	<suite name="GSAppleScriptTest Suite" code="GArs" description="Classes just for the GSAppleScriptTest application.">
-        
-        <!-- https://developer.apple.com/library/prerelease/mac/documentation/Darwin/Reference/ManPages/man5/sdef.5.html -->
-        <!--
-		<enumeration name="saveable file format" code="savf">
-			<enumerator name="Sketch" code="sktc" description="The native Sketch 2 file format">
-				<cocoa string-value="com.apple.sketch2"/>
-			</enumerator>
-			<enumerator name="PDF" code="PDF " description="Portable Document Format">
-				<cocoa string-value="com.adobe.pdf"/>
-			</enumerator>
-			<enumerator name="TIFF" code="TIFF" description="Tagged Image File Format">
-				<cocoa string-value="public.tiff"/>
-			</enumerator>
-		</enumeration>
-         -->
         
         <class-extension name="GSAppleScriptTest application" extends="application" description="Extensions specific to GSAppleScriptTest">
 
@@ -276,12 +236,6 @@
                 <cocoa key="ebayListings"/>
             </element>
 
-<!--            <property name="ebay listings" code="GSeb" access="r" description="All eBay listings.">-->
-<!--                <cocoa key="ebayListings"/>-->
-<!--                <type type="ebay listing" list="yes"/>-->
-<!--                <accessor style="id"/>-->
-<!--            </property>-->
-                        
             <property name="selected ebay listings" code="GSsl" access="r" description="Selected eBay listings.">
                 <cocoa key="selectedEbayListings"/>
                 <type type="ebay listing" list="yes"/>
@@ -363,58 +317,6 @@
                 <cocoa key="siteID"/>
             </property>
         </class>
-
-
-        <!--
-		<class name="graphic" code="grph" description="An object in a Sketch document. There are subclasses for each kind of graphic.">
-			<cocoa class="SKTGraphic"/>
-			<property name="x position" code="xpos" type="real"/>
-			<property name="y position" code="ypos" type="real"/>
-			<property name="width" code="widt" type="real"/>
-			<property name="height" code="heig" type="real"/>
-			<property name="fill color" code="fclr">
-				<type type="RGB color"/>
-				<type type="missing value"/>
-				<cocoa key="scriptingFillColor"/>
-			</property>
-			<property name="stroke color" code="sclr">
-				<type type="RGB color"/>
-				<type type="missing value"/>
-				<cocoa key="scriptingStrokeColor"/>
-			</property>
-			<property name="stroke thickness" code="slwd">
-				<type type="real"/>
-				<type type="missing value"/>
-				<cocoa key="scriptingStrokeWidth"/>
-			</property>
-		</class>
-
-		<class name="box" plural="boxes" code="d2rc" inherits="graphic" description="A rectangular graphic.">
-			<cocoa class="SKTRectangle"/>
-		</class>
-
-		<class name="circle" code="d2cr" inherits="graphic" description="an ellipsoidal graphic, actually.">
-			<cocoa class="SKTCircle"/>
-		</class>
-
-		<class name="image" code="d2im" inherits="graphic" description="A placed image.">
-			<cocoa class="SKTImage"/>
-			<property name="imagefile" code="imgf" type="text" access="w" description="The path to the file containing the image. This is just for use when creating a new placed image using the make command.">
-				<cocoa key="filePath"/>
-			</property>
-		</class>
-
-		<class name="line" code="d2ln" inherits="graphic" description="A line graphic.">
-			<cocoa class="SKTLine"/>
-		</class>
-
-		<class name="text area" code="d2ta" inherits="graphic" description="A text graphic.">
-			<cocoa class="SKTText"/>
-			<contents name="text contents" code="tact" type="rich text" description="Its contents.">
-				<cocoa key="scriptingContents"/>
-			</contents>
-		</class>-->
-
 	</suite>
 
 </dictionary>
