@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAC858EC1BCE901E007A87FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC858EB1BCE901E007A87FA /* AppDelegate.m */; };
+		DAC858EF1BCE901E007A87FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC858EE1BCE901E007A87FA /* main.m */; };
+		DAC858F11BCE901E007A87FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC858F01BCE901E007A87FA /* Assets.xcassets */; };
+		DAC858F41BCE901E007A87FA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC858F21BCE901E007A87FA /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAC858E71BCE901E007A87FA /* GSAppleScriptTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSAppleScriptTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC858EA1BCE901E007A87FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAC858EB1BCE901E007A87FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAC858EE1BCE901E007A87FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAC858F01BCE901E007A87FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAC858F31BCE901E007A87FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DAC858F51BCE901E007A87FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAC858E41BCE901E007A87FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAC858DE1BCE901E007A87FA = {
+			isa = PBXGroup;
+			children = (
+				DAC858E91BCE901E007A87FA /* GSAppleScriptTest */,
+				DAC858E81BCE901E007A87FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAC858E81BCE901E007A87FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAC858E71BCE901E007A87FA /* GSAppleScriptTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAC858E91BCE901E007A87FA /* GSAppleScriptTest */ = {
+			isa = PBXGroup;
+			children = (
+				DAC858EA1BCE901E007A87FA /* AppDelegate.h */,
+				DAC858EB1BCE901E007A87FA /* AppDelegate.m */,
+				DAC858F01BCE901E007A87FA /* Assets.xcassets */,
+				DAC858F21BCE901E007A87FA /* MainMenu.xib */,
+				DAC858F51BCE901E007A87FA /* Info.plist */,
+				DAC858ED1BCE901E007A87FA /* Supporting Files */,
+			);
+			path = GSAppleScriptTest;
+			sourceTree = "<group>";
+		};
+		DAC858ED1BCE901E007A87FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAC858EE1BCE901E007A87FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAC858E61BCE901E007A87FA /* GSAppleScriptTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC858F81BCE901E007A87FA /* Build configuration list for PBXNativeTarget "GSAppleScriptTest" */;
+			buildPhases = (
+				DAC858E31BCE901E007A87FA /* Sources */,
+				DAC858E41BCE901E007A87FA /* Frameworks */,
+				DAC858E51BCE901E007A87FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSAppleScriptTest;
+			productName = GSAppleScriptTest;
+			productReference = DAC858E71BCE901E007A87FA /* GSAppleScriptTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAC858DF1BCE901E007A87FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Paul Hecker";
+				TargetAttributes = {
+					DAC858E61BCE901E007A87FA = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = DAC858E21BCE901E007A87FA /* Build configuration list for PBXProject "GSAppleScriptTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAC858DE1BCE901E007A87FA;
+			productRefGroup = DAC858E81BCE901E007A87FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAC858E61BCE901E007A87FA /* GSAppleScriptTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAC858E51BCE901E007A87FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC858F11BCE901E007A87FA /* Assets.xcassets in Resources */,
+				DAC858F41BCE901E007A87FA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAC858E31BCE901E007A87FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC858EF1BCE901E007A87FA /* main.m in Sources */,
+				DAC858EC1BCE901E007A87FA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAC858F21BCE901E007A87FA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC858F31BCE901E007A87FA /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAC858F61BCE901E007A87FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DAC858F71BCE901E007A87FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DAC858F91BCE901E007A87FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GSAppleScriptTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iwascoding.GSAppleScriptTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAC858FA1BCE901E007A87FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GSAppleScriptTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iwascoding.GSAppleScriptTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAC858E21BCE901E007A87FA /* Build configuration list for PBXProject "GSAppleScriptTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC858F61BCE901E007A87FA /* Debug */,
+				DAC858F71BCE901E007A87FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC858F81BCE901E007A87FA /* Build configuration list for PBXNativeTarget "GSAppleScriptTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC858F91BCE901E007A87FA /* Debug */,
+				DAC858FA1BCE901E007A87FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAC858DF1BCE901E007A87FA /* Project object */;
+}
