@@ -222,12 +222,6 @@
 
 	</suite>
 
-
-<!--
-        ------- App Specific code starts here -------
- -->
-
-
 	<suite name="GSAppleScriptTest Suite" code="GArs" description="Classes just for the GSAppleScriptTest application.">
         
         <class-extension name="GSAppleScriptTest application" extends="application" description="Extensions specific to GSAppleScriptTest">
