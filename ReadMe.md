@@ -4,11 +4,15 @@ Mac OS X 10.10.x and 10.11
 
 ### DESCRIPTION OF PROBLEM
 
-We are trying to make our application GarageSale scriptable. The application can start listings on eBay. Mainly it contains listings which should be accessible through AppleScript. The user can select the listings in an outline view. These "selected ebay listings" should be accessible through AppleScrip, too.
+We have rewritten one of our older OS X applications from scratch, and are now facing problems getting the AppleScript interaction to work.
 
-So we want to be able to get an array of all listings/Cocoa-objects and an array of only a subset of this array (the selected listings in the example app). All listings are declared as elements in the sdef, the selected listings are declared as a read-only property.
+The application is dealing with objects of type "GSEbayListing". We are exposing the "all listings" array and "selected listings" array through AppleScript. 
 
-We get the following error whenever we access a Cocoa-object within the subset:
+All listings are declared as elements in the application's sdef file, the selected listings are declared as a read-only property.
+
+An error is retuned whenever one tries to access an element from the "selected listings" property in AppleScript like this:
+
+The returned error is:
 
  	Can't make item 1 of selected ebay listings into type specifier." number -1700 from item 1 of selected ebay listings to specifier
 
@@ -16,7 +20,7 @@ We think this is either an issue in our sdef, an issue with our class hierarchy 
 
 ### STEPS TO REPRODUCE
 
-We have created a small example project which you can clone from this git repository:
+We have created a small example project to demonstrate the problem and put it on GitHub:
 
 https://github.com/lluuaapp/GSAppleScriptTest
 
