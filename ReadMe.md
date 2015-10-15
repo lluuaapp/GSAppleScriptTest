@@ -6,11 +6,14 @@ Mac OS X 10.10.x and 10.11
 
 We have rewritten one of our older OS X applications from scratch, and are now facing problems getting the AppleScript interaction to work.
 
-The application is dealing with objects of type "GSEbayListing". We are exposing the "all listings" array and "selected listings" array through AppleScript. 
+The application is dealing with objects of type "GSEbayListing". We are exposing the all "ebay listings" array and "selected ebay listings" array through AppleScript. 
 
-All listings are declared as elements in the application's sdef file, the selected listings are declared as a read-only property.
+All listings is declared as elements in the application's sdef file, the selected listings are declared as a read-only property.
 
-An error is retuned whenever one tries to access an element from the "selected listings" property in AppleScript like this:
+An error is retuned whenever one tries to access an element from the "selected ebay listings" property in AppleScript like this:
+
+tell application "GSAppleScriptTest"
+    repeat with theListing in selected ebay listings		log (class of theListing)		log title of theListing as string	end repeatend tell
 
 The returned error is:
 
