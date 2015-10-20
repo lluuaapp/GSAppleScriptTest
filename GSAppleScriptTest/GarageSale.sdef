@@ -247,6 +247,9 @@
         
 		<class name="listing" code="GSli" description="A GSAppleScriptTest listing">
 			<cocoa class="GSListing"/>
+            <property name="id" code="ID  " type="text" access="r">
+                <cocoa key="uuid"/>
+            </property>
 			<property name="title" code="GSti" type="text" access="rw" description="Its title."/>
             <property name="convert description to HTML" code="GSht" type="boolean" access="rw" description="Whether to convert description to HTML.">
                 <cocoa key="convertDescriptionToHTML"/>

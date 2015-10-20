@@ -16,7 +16,7 @@
     NSScriptClassDescription *appDescription = (NSScriptClassDescription *)[NSApp classDescription];
     return [[NSUniqueIDSpecifier alloc] initWithContainerClassDescription:appDescription
                                                        containerSpecifier:nil
-                                                                      key:@"ebay listing"
+                                                                      key:@"ebayListings"
                                                                  uniqueID:self.uuid];
 }
 
